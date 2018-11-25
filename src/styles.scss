@@ -1,0 +1,31 @@
+/* You can add global styles to this file, and also import other style files */
+@import 'variables';
+@import '../node_modules/bootstrap/scss/bootstrap';
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+@font-face {
+    font-family: 'Rubik';
+    src:  url('assets/fonts/Rubik-Regular.ttf')  format('truetype');
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Rubik', sans-serif;
+    color: #212227;
+    font-weight: 500;
+}
+
+.form-control {
+    border: 2px solid $primary;
+    border-radius: 0;
+}
+
+.mat-radio-button.mat-accent .mat-radio-inner-circle, .mat-radio-button.mat-accent .mat-radio-ripple .mat-ripple-element:not(.mat-radio-persistent-ripple), .mat-radio-button.mat-accent.mat-radio-checked .mat-radio-persistent-ripple, .mat-radio-button.mat-accent:active .mat-radio-persistent-ripple {
+    background-color: $primary;
+}
+
+button {
+    border-radius: 0 !important;
+    height: 50px !important;
+}
+
